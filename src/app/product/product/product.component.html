@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>Welcome to Shopping Cart</h1>
+    </div>
+    <div class="col-lg-6">
+        <a href="javascript:void(0);" [routerLink]="['/cart']" routerLinkActive="router-link-active"  class="btn btn-success float-right">Checkout ({{count}})</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 card-margin" *ngFor="let item of products">
+      <div class="card" style="width: 18rem;">
+        <img [src]="item.img_url" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <h6 class="card-title">{{ item.price | currency: "₹"}}</h6>
+          <p class="card-text">
+            {{ item.description }}
+          </p>
+          <a href="javascript:void(0);" class="btn btn-danger" (click)="cartService.decreaseProduct(item)">Remove</a>
+          &nbsp;&nbsp;
+          <a href="javascript:void(0);" class="btn btn-success" (click)="cartService.addProduct(item)">Add</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

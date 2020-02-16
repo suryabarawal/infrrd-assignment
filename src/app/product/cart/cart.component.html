@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>Cart</h1>
+    </div>
+    <div class="col-lg-6">
+        <a href="javascript:void(0);" [routerLink]="['/']" routerLinkActive="router-link-active"  class="btn btn-success float-right">Back to Product List</a>
+    </div>
+  </div>
+  <div class="row">
+    <ng-container *ngIf="cart.length; else noProductInCart">
+      <div class="col-lg-12 card-margin" *ngFor="let item of cart">
+        <div class="" style="width: 100%;">
+          <img [src]="item.img_url" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <h6 class="card-title">{{ item.price * getCountOfProductInCart(item) | number: '0.0-2'  | currency: "₹"}}</h6>
+            <p class="card-text">
+              {{ item.description }}
+            </p>
+            <a href="javascript:void(0);" class="btn btn-danger" (click)="cartService.decreaseProduct(item)">Remove</a>
+            {{getCountOfProductInCart(item)}}
+            <a href="javascript:void(0);" class="btn btn-success" (click)="cartService.addProduct(item)">Add</a>
+          </div>
+        </div>
+      </div>
+
+    </ng-container>
+    <ng-template #noProductInCart>
+      <div class="col-lg-12">
+        <p>No Item Found</p>
+      </div>
+    </ng-template>
+
+    <ng-container *ngIf="cart.length">
+        <div class="col-lg-12 card-margin">
+          <div class="" style="width: 100%;">
+            <div class="card-body">
+              Total Amount: {{ getTotalCartCalue() | number: '0.0-2' | currency: "₹"}}
+
+            </div>
+            <div class="card-body">
+              <a href="JavaScript:Void(0);" class="btn btn-success" (click)="checkout()">Checkout</a>
+
+            </div>
+          </div>
+        </div>
+
+      </ng-container>
+  </div>
+</div>

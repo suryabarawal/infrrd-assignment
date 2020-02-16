@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "price": 28.99,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "price": 8.99,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "price": 4.99,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 4,
+    "name": "Product 4",
+    "price": 10.99,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "price": 15.99,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 6,
+    "name": "Product 6",
+    "price": 6.67,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 7,
+    "name": "Product 7",
+    "price": 20.99,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 8,
+    "name": "Product 8",
+    "price": 1.49,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 9,
+    "name": "Product 9",
+    "price": 4.99,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 10,
+    "name": "Product 10",
+    "price": 5,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 11,
+    "name": "Product 11",
+    "price": 9.49,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  },
+  {
+    "id": 12,
+    "name": "Product 12",
+    "price": 6.67,
+    "amount": 0,
+    "img_url": "../../../assets/pexels-photo-1417945.jpeg",
+    "description": "Description of the product"
+  }
+]
